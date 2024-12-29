@@ -1,0 +1,24 @@
+html {
+    background-color: black;
+    overflow: hidden;
+    cursor: url(../media/images/godscursor.png), none;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#basement {
+    position: absolute;
+}
+
+#clicky {
+    width:700px;
+    height: 600px;
+    left: 500px;
+    position: absolute;
+    cursor: url(../media/images/godscursorclicker.png), none;
+}

@@ -1,0 +1,141 @@
+html {
+    background-color: rgb(255, 255, 255);
+    background-size: 2920px;
+    background-position: 50px, 0px;
+    overflow: hidden;
+    cursor: url(../media/images/godscursor.png), none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 0px black inset;
+    animation: bgmove 6s linear infinite reverse;
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+#chest{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    cursor: url(../media/images/godscursorclicker.png), none;
+    z-index: 1;
+}
+
+#glow{
+    position:absolute;
+    width: 1500px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: -9;
+    animation: rotatin3 3s infinite linear;
+}
+
+#key{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    cursor: url(../media/images/godscursorclicker.png), none;
+    z-index: 1;
+}
+
+@keyframes bgmove{
+    0%{
+        background-position: 50px, 0px;
+    }
+    100%{
+        background-position: 2970px, 0px;
+    }
+}
+
+#rainbow{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width: 2000px;
+    height: 500px;
+    transform: translate(-50%, -90%);
+    cursor: url(../media/images/godscursorclicker.png), none;
+    z-index: -10;
+}
+
+#smiley1{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width: 300px;
+    z-index: 1;
+    animation: rotatin1 1s infinite linear;
+
+}
+
+#smiley2{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width: 300px;
+    z-index: 1;
+    animation: rotatin2 1s infinite linear;
+    
+}
+
+@keyframes rotatin1{
+    0%{
+        transform: translate(-250%, -50%) rotate(45deg);
+    }
+    50%{
+        transform: translate(-250%, -50%) rotate(-45deg);
+    }
+    100%{
+        transform: translate(-250%, -50%) rotate(45deg);
+    }
+}
+
+@keyframes rotatin2{
+    0%{
+        transform: translate(150%, -50%) rotate(45deg);
+    }
+    50%{
+        transform: translate(150%, -50%) rotate(-45deg);
+    }
+    100%{
+        transform: translate(150%, -50%) rotate(45deg);
+    }
+}
+
+@keyframes rotatin3{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+#texts {
+    font-size: 105px;
+    line-height: 105px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 0, 0);
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 10px 10px rgba(0,0,0, .8);
+}
+
+#text1 {
+    position: absolute;
+    width: 100%;
+    height: 105px;
+}
+
+#text2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 105px;
+}

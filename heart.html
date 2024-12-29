@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>It Beats</title>
+        <link rel="icon" type="image/png" href="media/images/brain.png">
+    </head>
+    <body>
+        <img src="media/images/heart.gif" id="heart" onclick="stopbeating()">
+        <br>
+        <input type="number" id="code" max="9999999" onKeyDown="
+            if(this.value.length==7 && event.keyCode>47 && event.keyCode < 58)
+                return false;"/>
+    </body>
+    <link rel="stylesheet" href="css/heart.css">
+    <script type="text/javascript" src="js/heart.js"></script>
+</html>

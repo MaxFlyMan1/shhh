@@ -1,0 +1,57 @@
+﻿html {
+    background-color: black;
+    overflow: hidden;
+    cursor: url(../media/images/godscursor.png), none;
+    margin: 0;
+    padding: 0
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+#pieces{
+  display: grid;
+  grid-template-columns: 105px 105px 105px 105px 105px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-585px, 35px);
+  width: 525px;
+  height: 375px;
+  background-color: white;
+}
+
+#puzzle {
+  display: grid;
+  grid-template-columns: 105px 105px 105px 105px 105px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(40px, 35px);
+  width: 525px;
+  height: 375px;
+  
+}
+
+.pieceholder {
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0);
+  }
+
+.piece{
+  width: 105px;
+  height: 75px;
+}
+
+#ogpuzzle{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -420px);
+  width: 525px;
+  height: 375px;
+}

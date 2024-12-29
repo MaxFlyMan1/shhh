@@ -1,0 +1,46 @@
+html {
+    background-color: black;
+    overflow: hidden;
+    cursor: url(../media/images/godscursor.png), none;
+    margin: 0;
+    padding: 0
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+#heart {
+    position:absolute;
+    left:50%;
+    top:300px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+#code {
+    position:absolute;
+    left:50%;
+    top:650px;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    font-size: 45px;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+#code::-webkit-inner-spin-button, 
+#code::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    appearance:textfield;
+}
+

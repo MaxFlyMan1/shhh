@@ -1,0 +1,71 @@
+@font-face { font-family: Architex; src: url(../media/font/Architex.ttf); } 
+
+html{
+    background: url(../media/images/rain.gif);
+    background-size: 500px;
+    overflow: hidden;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+#room{
+    position: absolute;
+    width: 1920px;
+    padding: 0;
+    margin:0;
+    transform: translate(0, -500px)
+}
+
+#note{
+    position: absolute;
+    width: 100px;
+    transform: translate(1550px, 640px);
+    cursor: url(../media/images/godscursorclicker.png), none;
+}
+
+#DONTREMOVE{
+    position: absolute;
+    background-color: red;
+    width: 300px;
+    height: 250px;
+    transform: translate(1425px, 500px);
+    text-align: center;
+    line-height: 250px;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#noteopen {
+    position:absolute;
+    display: block;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+}
+
+#bgdark {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000063;
+}
+
+#notetext {
+    position:absolute;
+    display: block;
+    left:50%;
+    top:50%;
+    transform: translate(-52%, -50%);
+    width: 560px;
+    height: 460px;
+    font-size: 40px;
+    font-family: Architex;
+}

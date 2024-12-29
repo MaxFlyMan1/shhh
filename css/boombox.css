@@ -1,0 +1,49 @@
+html{
+    background-color: #750000;
+    overflow: hidden;
+    cursor: url(../media/images/godscursor.png), none;
+    padding: 0;
+    margin:none;
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+#boombox {
+    position:absolute;
+    display: block;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+}
+
+#boomboxbg {
+    position:absolute;
+    display: block;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+}
+
+#cassete {
+    position:absolute;
+    display: block;
+    left:50%;
+    top:50%;
+    transform: translate(-55.5%, 90%);
+    width: 180px;
+}
+
+#clickyhere{
+    cursor: url(../media/images/godscursorclicker.png), none;
+    position:absolute;
+    width: 177px;
+    height: 107px;
+    left: 50%;
+    top:50%;
+    transform: translate(-56%, -12%);
+}

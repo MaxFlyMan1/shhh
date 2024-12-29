@@ -1,0 +1,63 @@
+html{
+    background-color: #330000;
+    overflow: hidden;
+    cursor: url(../media/images/godscursor.png), none;
+    padding: 0;
+    margin:none;
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+#table {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -10%);
+    width: 800px;
+}
+
+#tv {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -100%);
+    width: 400px;
+    cursor: url(../media/images/godscursorclicker.png), none
+}
+
+#static {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-65%, -120%);
+    width: 300px;
+}
+
+#screen {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-65%, -120%);
+    width: 300px;
+    opacity: 0;
+}
+
+#frequency {
+    position:absolute;
+    display: none;
+    width: 600px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -2500%);
+    accent-color: rgb(255, 0, 0);
+    cursor: url(../media/images/godscursor.png), none;
+}
+
+@-moz-document url-prefix() {
+    #frequency {
+        transform: translate(-50%, -2000%);
+    }
+}

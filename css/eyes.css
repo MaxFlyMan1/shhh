@@ -1,0 +1,30 @@
+html {
+    background-color: black;
+    overflow: hidden;
+    cursor: url(../media/images/godscursor.png), none;
+    padding: 0;
+    margin:none;
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+#alleyes{
+    display: grid
+}
+
+.eyes, .eyeballs{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.eyes {
+    z-index: 50;
+    cursor: url(../media/images/godscursorclicker.png), none;
+}
+
+.eyeballs {
+    z-index: -50;
+}

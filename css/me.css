@@ -1,0 +1,177 @@
+@font-face { font-family: MS Sans Serif; src: url(../media/font/MS\ Sans\ Serif.ttf); } 
+@font-face { font-family: MS Sans Serif Bold; src: url(../media/font/MS\ Sans\ Serif\ Bold.ttf); } 
+@font-face { font-family: HELP; src: url(../media/font/HELP.ttf); } 
+
+@keyframes zoom {
+    0% {width: 500px;}
+    50% {width: 900px;}
+    100% {width: 500px;}
+}
+
+html {
+    overflow: hidden;
+    cursor: url(../media/images/cursor.png), none;
+    background: url(../media/images/bg.jpg);
+    background-repeat: repeat;
+    animation: animatedBackground 2s linear infinite;
+    font-family: MS Sans Serif;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1235px 780px;
+    }
+}
+
+#window1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 800px;
+    width: 550px;
+    background-color: #ffbad3;
+    border: 5px outset #ff96bc;
+    padding: 16px
+}
+
+p1 {
+    font-size: 29px;
+    color: #ffffff
+}
+
+#kittywave {
+    width: 500px;
+    height: 344px;
+    object-position: 24px 0px;
+}
+
+p2 {
+    font-size: 17px;
+    color: #ffffff
+} 
+
+
+#autistic {
+    font-family: MS Sans Serif Bold;
+    font-size: 75px;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+p3 {
+    font-size: 22px;
+    color: #ffffff
+}
+
+p4 {
+    font-size: 17px;
+    font-family: HELP;
+    color: #000000
+} 
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.button {
+    cursor: url(../media/images/cursorclicker.png) 5 0, none;
+    font-size: 23px;
+    font-family: MS Sans Serif;
+    color: #ffffff;
+    background-color: rgb(255, 167, 197);
+    border: 4px outset #ff92ba;
+    padding: 6px;
+    margin: 5px;
+    width: 23%;
+}
+
+.button:hover {
+    background-color: rgb(248, 159, 189);
+    border: 4px outset #ff89b4;
+}
+
+@-moz-document url-prefix() {
+    .button {
+        width: 22.75%;
+    }
+}
+
+#input#file-input{
+    display: none;
+}
+
+#customfile{
+    cursor: url(../media/images/cursor.png), none;
+}
+
+#kitty {
+    width: 50px;
+    height: 34px;
+    position: fixed;
+    bottom:0%;
+    cursor: url(../media/images/cursorclicker.png), none;
+    overflow: hidden;
+}
+
+#godwat {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom:0%;
+    cursor: url(../media/images/cursorclicker.png), none;
+}
+
+#file{
+    display: none;
+}
+
+#backdoor {
+    position: fixed;
+    width: 50px;
+    height: 100px;
+    bottom: 0%;
+    right: 0%;
+    z-index: -10;
+}
+
+#door {
+    position: fixed;
+    width: 50px;
+    height: 100px;
+    bottom: 0%;
+    right: 0%;
+    z-index: 10;
+    transform-origin: left;
+    transition: all 0.5s ease-in-out;
+}
+
+.dooropen {
+    transform: perspective(50px) translateZ(0px) translateX(0px) translateY(0px) rotateY(54deg);
+}
